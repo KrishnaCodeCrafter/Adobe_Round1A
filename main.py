@@ -188,8 +188,8 @@ def extract_headings_from_text(doc) -> List[Dict]:
 # ---------------------- Main Processor ---------------------- #
 
 def process_pdfs():
-    input_dir = Path("/input")
-    output_dir = Path("/output")
+    input_dir = Path("/app/input")
+    output_dir = Path("/app/output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     pdf_files = list(input_dir.glob("*.pdf"))
